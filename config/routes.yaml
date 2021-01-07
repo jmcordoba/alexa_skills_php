@@ -1,0 +1,27 @@
+status:
+  path:       /status
+  controller: App\Controller\StatusController::index
+  methods:    GET
+
+order_info:
+  path:       /orders/{id}
+  controller: App\Controller\OrdersController::index
+  methods: GET
+
+order_by_email_info:
+  path:       /orders/{id}/{email}
+  controller: App\Controller\OrdersByEmailController::index
+  methods: GET
+
+account_info:
+  path:       /accounts/{email}/{pass}
+  controller: App\Controller\AccountsController::index
+  methods: GET
+
+login:
+  path: /login
+  controller: App\Controller\LoginController::index
+
+alexa:
+  path: /alexa
+  controller: App\Controller\AlexaController::index
